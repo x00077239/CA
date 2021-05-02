@@ -1,0 +1,19 @@
+### Layout of my Docker file
+
+FROM nginx
+###  The FROM instruction in Dockerfile initialises a base build
+###  Each dockerfile must begin with the FROM instruction
+
+
+WORKDIR /
+###  The WORKDIR instruction specifies a working directory location for instructions RUN, CMD, ENTRYPOINT, COPY and ADD instructions that follow it to run in
+###  The WORKDIR will be created if it doesnt exist even if unused
+###  WORKDIR can be used multiple times in a dockerfile and a relative path that is provided will be relative to the previous path specified by WORKDIR
+
+ 
+
+COPY  index.html /usr/share/nginx/html
+###  The COPY instruction allow users to copy files from one location into a docker image from a source to a destination
+
+CMD nginx -g 'daemon off,'
+###  I issued the command to the docker file to run the http.server on port 8080
