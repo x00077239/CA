@@ -1,0 +1,96 @@
+---<!DOCTYPE html>
+<html>
+<head>
+<title>EPA Continuous Assessment 1(Repeat)April 2021</title>
+</head>
+<body>
+
+<h1 style="color:blue;">EPA Continuous Assessment 1 April 2021</h1>
+<h2 style="color:red;" >Bash Script Tutorial for Year 4 IT Students</h2>
+
+<h2>This is a bash script tutorial for a year 4 IT Student</h2>
+
+<p>A Bash script is a plain text file which contains a series of commands. These commands are a mixture of commands we would normally type ouselves on the command line (such as ls or cp)and commands we could type on the command line but generally wouldn't.</p>
+
+<center>
+<h3>Top Commands used within BASH</h3>
+<p>ls — List directory contents</p>
+<p>echo — Prints text to the terminal window</p>
+<p>touch — Creates a file</p>
+<p>mkdir — Create a directory</p>
+<p>grep — search</p>
+<p>man — Print manual or get help for a command</p>
+<p>pwd — Print working directory</p>
+<p>cd — Change directory</p>
+<p>mv — Move or rename directory</p>
+<p>rmdir — Remove directory</p>
+<p>locate — Locate a specific file or directory</p>
+<p>less — view the contents of a text file</p>
+<p>compgen — Shows all available commands, aliases, and functions</p>
+<p>cat — Read a file, create a file, and concatenate files</p>
+<p>| — Pipe<p/>
+<p>head — Read the start of a file</p>
+<p>tail — Read the end of a file</p>
+<p>chmod — Sets the file permissions flag on a file or folder</p>
+<p>exit — Exit out of a directory</p>
+</center>
+
+<center>
+<h3>Creating your own bash commands</h3>
+</center>
+Custom commands in Bash are known as “aliases”. Aliases are an abbreviation, or a means to avoid typing a long command sequence. They can save a great deal of typing at the command line so you can avoid having to remember complex combinations of commands and options.
+
+<h3>Example of using aliases</h3>
+
+Syntax: alias alias_name = “command_to_run”
+A very simple example would look like this:
+
+alias c = “clear”
+Now every time you want to clear the screen, instead of typing in clear, you can just type c and you’ll be good to go. (information extracted from https://www.educative.io/blog/bash-shell-command-cheat-sheet</p>  
+
+<h3>Using Bash Commands to display system analysis</h3>
+<p>lspci - this will list the PCI devices within the system</p>
+<p>lsusb - this will list the USB devices within the system</p>
+<p>lsmod - this will list the drivers within the system</p>
+
+<h3>To continously display System Log</h3>
+<p>To continually display the system log you should use this command: tail ­f /var/log/syslog</p>
+
+<h3>File Properties</h3>
+<p>Using the statmyfile command will list the name, size, type, permissions, owner, time stamps
+info on file system containing statmyfile</p>
+
+<h3>Disk tools</h3>
+<p>using df will display disk space and usage for all drives</p>
+<p>using mount will display all mounted devices</p>
+<p>using sync will write all pending operations to disk
+Very important to do before retreiving a USB stick or a
+memory card!</p>
+
+<h3>Time Processes</h3>
+<p>to execute a program every 10 seconds you would use the following command watch ­n 10  myprogram</p>
+
+
+<p>Information extracted from http://staff.ltam.lu/feljc/software/Bash_commands.pdf</p>
+
+<h2 style="color:blue;" >Detailed description of CA</h2>
+
+  <dt>docker run -p [my docker image] 8090:8080 </dt>
+  <dd>This is the command I ran to get the image to listen on port 8090 and I was then able to browse to CA1.html</dd>
+</dl>
+
+
+<dl>
+  <dt>docker run -p [my docker image] 8090:8080 </dt>
+  <dd>This is the command I ran to get the image to listen on port 8090 and I was then able to browse to CA1.html</dd>
+</dl>
+<h2 style="color:blue;" >Links used in creating bash script tutorial</h2>
+<p>4 Resources Used in EPA CA</p>
+<ul>
+<li><a href= “https://www.educative.io/blog/bash-shell-command-cheat-sheet”>Bash Scripting help.</a></li>
+<li><a href="https://hub.docker.com/_/nginx">To assist with Nginx</a></li>
+<li><a href="https://www.w3schools.com/html/default.asp">A super site for basic HTML writing</a></li>
+<li><a href="https://www.quora.com/How-do-I-navigate-directories-in-a-Docker-container>Used to help navigate through the docker containers</a></li>
+</ul>
+</body>
+</html>
